@@ -7,7 +7,8 @@
     <link href="css/chat.css" rel="stylesheet" type="text/css">
     <link href="css/chat.css" rel="stylesheet"/>
     <link href="css/cssConsole.css" type="text/css" rel="stylesheet">
-    <script src="js/jquery-1.6.4.min.js"></script>
+    <!--<script src="js/jquery-1.6.4.min.js"></script>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="js/jquery-ui-1.11.4.js"></script>
     <script src="js/jquery.signalR-2.2.0.js"></script>
     <script src="js/json2.js"></script>    
@@ -16,7 +17,6 @@
     <script src="http://chat20160216024815.azurewebsites.net//signalr/hubs"></script>
     <script src="js/vClassroom.js"></script>
     <script id="new-message-template" type="text/x-jquery-tmpl">
-    <script src="js/cssConsole.js"></script>
         <li class="message" id="m-${id}">
             <strong>${name}:</strong>
             {{html message}}
@@ -27,6 +27,7 @@
             <img src="http://www.gravatar.com/avatar/${hash}?s=16&d=mm" class="gravatar"/> ${name}
         </li>
     </script>
+    <script src="js/cssConsole.js"></script>
 </head>
 
 <body>

@@ -3,7 +3,7 @@ background: white;
 font-family: courier;
 font-size: 14px;
 }
-.container {
+.containerConsole {
 background-color: black;
 margin: 50px auto;
 height: 300px;
@@ -11,19 +11,20 @@ width: 600px;
 position:relative;
 border:1px solid #fefefe;
 float: left;
+color:white;
 }
-#input {
+#inputConsole {
 width: 550px;
 display:inline-block;
 position:relative;
 float:left;
 }
-.bottom {
+.bottomConsole {
 position:absolute;
 bottom:5px;
 width: 100%;
 }
-.label {
+.labelConsole {
 width: 30px;
 position: relative;
 left: 15px;
@@ -31,22 +32,22 @@ top:5px;
 color: #fefefe;
 float:left;
 }
-.console {
+.consoleConsole {
 position:absolute;
 bottom:32px;
 overflow:hidden;
 }
-.white{
+.whiteConsole{
 color: #fefefe;
 }
-.blue{
+.blueConsole{
 color: #81bbd5;
 }
-.line {
+.lineConsole {
 margin-left: 15px;
 margin-bottom:2px;
 }
-.margin {
+.marginConsole {
 margin-left: 40px;
 margin-bottom:2px;
 }
