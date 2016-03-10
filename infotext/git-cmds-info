@@ -1,0 +1,92 @@
+git init:
+___________________________________________________________________________________________________
+
+"git init" is the first command for getting started with your very own repository. When you type in this command in your command line interface you will create a repository in the directory you are currently in when pressing enter.
+
+Ex:
+git init 
+
+This will create a hidden file(.git) with all the basic information about your git repository will be stored.
+
+You are now ready to start adding files to your repository.
+
+___________________________________________________________________________________________________
+
+
+git status
+___________________________________________________________________________________________________
+
+Once you have added files to your git repository you can check the status by typing git status.
+
+The files you have created will then show up in red, this means they are not yet added to your repository.
+Files that show up as green means they are added but not yet commit'ed
+
+Ex:
+git status
+
+modified:   test.txt (red)
+
+
+___________________________________________________________________________________________________
+
+
+git add
+___________________________________________________________________________________________________
+
+Once you are finished editing your files you are ready to add them you your git repository.
+This is done using the "git add" command.
+
+Ex:
+git add test.txt 	/* adds the specified file */
+git add .  			/* adds all the modified files in your directory */
+git add *.txt 		/* add all .txt files in your directory */
+
+Once you have added the files you can do "git status" and they will show up as green.
+
+
+___________________________________________________________________________________________________
+
+
+git commit
+___________________________________________________________________________________________________
+
+You are now ready to commit your changes. When you commit you finish the added files will be added to your repository. When you do this you usually add a commit message. In this message you would normally write information about the changes you have done.
+
+git commit -m "MESSAGE"
+
+Yay!, you have now successfully done a commit to your git repository.
+
+___________________________________________________________________________________________________
+
+
+git push
+___________________________________________________________________________________________________
+
+You will now have the ability to push your git repository to an external git provider. Most commenly used https://github.com. 
+You will have to create an account and a new repository with the same name. 
+Once this is done you are ready to push your repository to the external provider.
+
+Ex:
+git remote add origin https://github.com/user/test.git
+git push -u origin master
+
+You can now check your repository online in a web browser by going to https://github.com/user/test.git.
+
+___________________________________________________________________________________________________
+
+
+git pull
+___________________________________________________________________________________________________
+
+
+
+___________________________________________________________________________________________________
+
+
+git clone
+___________________________________________________________________________________________________
+
+Once you have your repository added to git
+
+
+___________________________________________________________________________________________________
