@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#inputConsole').find('input').focus();
 });
 $('#inputConsole').cssConsole({
-	inputName:'console',
+	inputName:'consoleConsole',
 	charLimit: 60,
 	onEnter: function(){
 		addLine("> "+$('#inputConsole').find('input').val());
