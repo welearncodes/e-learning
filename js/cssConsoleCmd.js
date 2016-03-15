@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#inputConsole').find('input').focus();
 });
 $('#inputConsole').cssConsole({
-	inputName:'consoleConsole',
+	inputName:'console',
 	charLimit: 60,
 	onEnter: function(){
 		addLine("> "+$('#inputConsole').find('input').val());
@@ -31,7 +31,7 @@ function execCommand(command){
     }   
 }
 var commands = {
-	help: function (){
+	"git help": function (){
 		addLine("Available command list:");
 		addLine("Type `help name' to find out more about the function `name'.");
 		addLine("git init", 'margin');
