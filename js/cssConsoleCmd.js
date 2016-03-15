@@ -11,7 +11,6 @@ $('#inputConsole').cssConsole({
 		$('#inputConsole').find('input').focus();
 	}
 });
-var lineLimit = 28;
 $('.containerConsole').on('click', function() {
 	$('#inputConsole').find('input').focus();
 });
