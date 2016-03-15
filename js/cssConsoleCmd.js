@@ -12,7 +12,7 @@ $('#inputConsole').cssConsole({
 		$('#inputConsole').find('input').focus();
 	}
 });
-var lineLimit = 28;
+var lineLimit = 15;
 $('.containerConsole').on('click', function() {
 	$('#inputConsole').find('input').focus();
 });
