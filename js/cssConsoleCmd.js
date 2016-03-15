@@ -109,7 +109,6 @@ var commands = {
 		addLine("name: movie player pid:3213", 'margin');
 		addLine("name: system pid:0012", 'margin');
 	}
-=======
 $(document).ready(function() {
     $('#inputConsole').find('input').focus();
 });
@@ -220,5 +219,4 @@ var commands = {
 		addLine("name: movie player pid:3213", 'margin');
 		addLine("name: system pid:0012", 'margin');
 	}
->>>>>>> d802c229e5a05bd90bea8e3320d9e6e998cad7ce
 }
