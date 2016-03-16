@@ -6,7 +6,7 @@
 <!-- Hvilken html fill som du vill, dette vill bestemme innholdet ditt -->
 <?php> include ('../html/git-pull.html') ?>
 
-<?php include('../html/cssConsole.html'); ?>
+<?php include('../term/console.html'); ?>
 
 <?php include('../html/scripts.html'); ?>
 
