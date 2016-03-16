@@ -1,19 +1,19 @@
 $(document).ready(function() {
-    $('#inputConsole').find('input').focus();
+    $('#input').find('input').focus();
 });
-$('#inputConsole').cssConsole({
-	inputName:'consoleConsole',
+$('input').cssConsole({
+	inputName:'console',
 	charLimit: 60,
 	onEnter: function(){
-		addLine("> "+$('#inputConsole').find('input').val());
-		execCommand($('#inputConsole').find('input').val());
-		$('#inputConsole').cssConsole('reset');	
-		$('#inputConsole').find('input').focus();
+		addLine("> "+$('#input').find('input').val());
+		execCommand($('#input').find('input').val());
+		$('#input').cssConsole('reset');	
+		$('#input').find('input').focus();
 	}
 });
-var lineLimit = 15;
+var lineLimit = 12;
 $('.containerConsole').on('click', function() {
-	$('#inputConsole').find('input').focus();
+	$('#input').find('input').focus();
 });
 function addLine(input, style, color) {
 		if($('.consoleConsole div').length==lineLimit) {
@@ -31,7 +31,7 @@ function execCommand(command){
     }   
 }
 var commands = {
-	help: function (){
+	"help": function (){
 		addLine("Available command list:");
 		addLine("Type `help name' to find out more about the function `name'.");
 		addLine("git init", 'margin');
@@ -111,20 +111,20 @@ var commands = {
 	}
 }
 $(document).ready(function() {
-    $('#inputConsole').find('input').focus();
+    $('#input').find('input').focus();
 });
-$('#inputConsole').cssConsole({
+$('#input').cssConsole({
 	inputName:'console',
 	charLimit: 60,
 	onEnter: function(){
-		addLine("> "+$('#inputConsole').find('input').val());
-		execCommand($('#inputConsole').find('input').val());
-		$('#inputConsole').cssConsole('reset');	
-		$('#inputConsole').find('input').focus();
+		addLine("> "+$('#input').find('input').val());
+		execCommand($('#input').find('input').val());
+		$('#input').cssConsole('reset');	
+		$('#input').find('input').focus();
 	}
 });
 $('.containerConsole').on('click', function() {
-	$('#inputConsole').find('input').focus();
+	$('#input').find('input').focus();
 });
 function addLine(input, style, color) {
 		if($('.consoleConsole div').length==lineLimit) {
