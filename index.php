@@ -4,7 +4,7 @@
 
 <?php include('html/main.html'); ?>
 
-<?php include('html/cssConsole.html'); ?>
+<?php include('html/term/console.html'); ?>
 
 <?php include('html/scripts.html'); ?>
 
