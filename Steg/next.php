@@ -1,6 +1,6 @@
 <?php
 
-$location = "'location.href='/Steg/'" + $test;
+$location = "'location.href='steg/next.php'" + $test;
 
 print($loaction);
 
