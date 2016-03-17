@@ -6,7 +6,18 @@
 <!-- Hvilken html fill som du vill, dette vill bestemme innholdet ditt -->
 <?php include('../html/git-push.html') ?>
 
-<?php include('../html/cssConsole.html'); ?>
+
+<?php 
+$test = 'pull';
+
+include('next.php'); 
+
+
+?>
+
+<!-- php include('../html/cssConsole.html'); -->
+
+<?php include('../html/status.html'); ?>
 
 <?php include('../html/scripts.html'); ?>
 
