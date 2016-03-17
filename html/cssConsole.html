@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link href="cssConsole.console.css" type="text/css" rel="stylesheet">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="cssConsole.min.js"></script>
+<div class="row startConsole">
+<script src="js/cssConsole.js"></script>
+
+
+
 <style>
 
 
-.container {
+.row > .containerConsole {
+border: initial;
+height: initial;
 background-color:black;
 margin: 50px auto;
-height: 300px;
+height: 350px;
 width: 600px;
 position:relative;
 border:1px solid #fefefe;
 font-family: courier;
 }
 
-#input {
+.bottom > #input {
+
 background-color:black;
-width: 300px;
+width: 300px; 	
 display:inline-block;
 position:relative;
 float:left;
@@ -41,6 +43,7 @@ float:left;
 }
 
 .console {
+
 position:absolute;
 bottom:32px;
 overflow:hidden;
@@ -65,11 +68,8 @@ margin-bottom:2px;
 }
 
 </style>
-<meta charset=utf-8 />
-<title>CSS console</title>
-</head>
-<body>
-	<div class="container">
+
+	<div class="containerConsole">
 		<div class="console">
 			<div class="line white">Welcome to cssConsole! Type help for command list.</div>
 		</div>
@@ -97,7 +97,7 @@ $('#input').cssConsole({
 
 var lineLimit = 28;
 
-$('.container').on('click', function() {
+$('.containerConsole').on('click', function() {
 	$('#input').find('input').focus();
 });
 
@@ -143,6 +143,12 @@ var commands = {
 	}
 }
 </script>
+
+
+</div>
+
+
   
-</body>
-</html>
+
+
+

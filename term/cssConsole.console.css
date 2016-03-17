@@ -1,12 +1,10 @@
 .cssConsole {
-font-size: 17px;
 position:relative;
-font-family: courier;
 background: #370f29;
 color: #fefefe;
 padding: 5px;
 overflow: hidden;
-height: 17px;
+margin-left: 5px;
 cursor:text;
 line-height:17px;
 }
