@@ -1,25 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link href="cssConsole.console.css" type="text/css" rel="stylesheet">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="cssConsole.min.js"></script>
+<div class="row startConsole">
+<script src="js/cssConsole.js"></script>
+
+
+
 <style>
 
 
-.container {
+.row > .containerConsole {
+border: initial;
+height: initial;
 background-color:black;
 margin: 50px auto;
-height: 300px;
+height: 350px;
 width: 600px;
 position:relative;
 border:1px solid #fefefe;
 font-family: courier;
 }
 
-#input {
+.bottom > #input {
+
 background-color:black;
-width: 300px;
+width: 300px; 	
 display:inline-block;
 position:relative;
 float:left;
@@ -41,6 +43,7 @@ float:left;
 }
 
 .console {
+
 position:absolute;
 bottom:32px;
 overflow:hidden;
@@ -65,13 +68,10 @@ margin-bottom:2px;
 }
 
 </style>
-<meta charset=utf-8 />
-<title>CSS console</title>
-</head>
-<body>
-	<div class="container">
+
+	<div class="containerConsole">
 		<div class="console">
-			<div class="line white">Welcome to cssConsole! Type help for command list.</div>
+			<div class="line white">Welcome to Git Learning Consol! Type 'git help' for command list.</div>
 		</div>
 		<div class="bottom">
 			<div class="label">></div>
@@ -95,9 +95,9 @@ $('#input').cssConsole({
 	}
 });
 
-var lineLimit = 28;
+var lineLimit = 14;
 
-$('.container').on('click', function() {
+$('.containerConsole').on('click', function() {
 	$('#input').find('input').focus();
 });
 
@@ -119,12 +119,67 @@ function execCommand(command){
 }
 
 var commands = {
-	help: function (){
+	"git help": function (){
 		addLine("Available command list:");
-		addLine("dir", 'margin');
-		addLine("help", 'margin');
-		addLine("ps", 'margin');
+		addLine("Type `git help 'name' to find out more about the function `name'.");
+		addLine("git init", 'margin');
+		addLine("git status", 'margin');
+		addLine("git add", 'margin');
+		addLine("git commit", 'margin');
+		addLine("git clone", 'margin');
+		addLine("git pull", 'margin');
 	},
+
+	"git help init": function (){
+		addLine("Command description:");
+		addLine("$ git init [project-name]", 'margin');
+		addLine("Creates a new local repository with the specified name.");
+	},
+
+	"git help status": function (){
+		addLine("Command description:");
+		addLine("$ git status", 'margin');
+		addLine("Lists all new or modified files to be commited.");
+	},
+
+	"git help add": function (){
+		addLine("Command description:");
+		addLine("$ git add [file]", 'margin');
+		addLine("Snapshots the file in preparation for versioning.");
+	},
+
+	"git help commit": function (){
+		addLine("Command description:");
+		addLine("$ git commit -m [descriptive message]", 'margin');
+		addLine("Records file snapshots permanently in version history.");
+	},
+
+	"git help clone": function (){
+		addLine("Command description:");
+		addLine("$ git clone [url]", 'margin');
+		addLine("Downloads a project and its entire version history.");
+	},
+
+	"git help pull": function (){
+		addLine("Command description:");
+		addLine("$ git pull", 'margin');
+		addLine("Downloads bookmark history and incorporates changes.");
+	},
+
+	"git init": function (){
+		addLine("Initialized empty Git repository in /home/root/.git/");
+	},
+
+	"git status": function (){
+		addLine("On branch master");
+		addLine("Initial commit", 'margin');
+		addLine(" ", 'margin');
+		addLine("Untracked files:");
+		addLine("./html",'margin');
+		addLine("./html/index.html",'margin');
+		addLine(' (use "git add <file>..." to include in what will be committed) ');
+	},
+
 	dir: function(){
 		addLine(".");
 		addLine("..");
@@ -143,6 +198,12 @@ var commands = {
 	}
 }
 </script>
+
+
+</div>
+
+
   
-</body>
-</html>
+
+
+
