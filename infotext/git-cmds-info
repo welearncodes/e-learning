@@ -78,6 +78,13 @@ ________________________________________________________________________________
 git pull
 ___________________________________________________________________________________________________
 
+When you have added your repositry to git you will have the option to pull changes. This comes in handy
+when other colabirators have added code to your repository.
+
+Ex:
+git pull
+
+The added code will the be merged with your files.
 
 
 ___________________________________________________________________________________________________
