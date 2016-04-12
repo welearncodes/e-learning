@@ -21,7 +21,7 @@ font-family: courier;
 .bottom > #input {
 
 background-color:black;
-width: 300px; 	
+width: 390px; 	
 display:inline-block;
 position:relative;
 float:left;
@@ -71,7 +71,8 @@ margin-bottom:2px;
 
 	<div class="containerConsole">
 		<div class="console">
-			<div class="line white">Welcome to Git Learning Consol! Type 'git help' for command list.</div>
+			<div class="line white">Welcome to Git Learning Consol! Type 'git help' for command list.<br><br>
+			Step 1: Initiate an empty repository with 'git init'</div>
 		</div>
 		<div class="bottom">
 			<div class="label">></div>
@@ -86,7 +87,7 @@ $(document).ready(function() {
 
 $('#input').cssConsole({
 	inputName:'console',
-	charLimit: 60,
+	charLimit: 100,
 	onEnter: function(){
 		addLine("> "+$('#input').find('input').val());
 		execCommand($('#input').find('input').val());
@@ -145,7 +146,7 @@ var commands = {
 	"git help add": function (){
 		addLine("Command description:");
 		addLine("$ git add [file]", 'margin');
-		addLine("Snapshots the file in preparation for versioning.");
+		addLine("The git add command adds a change in the working directory to the staging area. And makes the file(s) ready for versoning.");
 	},
 
 	"git help commit": function (){
@@ -168,6 +169,9 @@ var commands = {
 
 	"git init": function (){
 		addLine("Initialized empty Git repository in /home/root/.git/");
+		addLine("<br> ", 'margin');
+		addLine("Step 2: Create a file and append some text to it.");
+		addLine('Type: echo "This is one line" >> test.txt');
 	},
 
 	"git status": function (){
@@ -180,7 +184,23 @@ var commands = {
 		addLine(' (use "git add <file>..." to include in what will be committed) ');
 	},
 
-	dir: function(){
+		'echo "This is one line" >> test.txt': function (){
+		addLine("You now added one line to the file test.txt");
+	},
+
+		'echo "This is another line" >> test.txt': function (){
+		addLine("You now added another line to the file test.txt");
+	},
+
+			'git add test.txt': function (){
+		addLine("test");
+		window.location.href = "http://google.com";
+	},
+		"cat test.txt": function (){
+		addLine("This is one line");
+		addLine("This is another line");
+	},
+	ls: function(){
 		addLine(".");
 		addLine("..");
 		addLine("Applications", 'margin', 'blue');
@@ -188,7 +208,8 @@ var commands = {
 		addLine("Downloads", 'margin', 'blue');
 		addLine("Movies", 'margin', 'blue');
 		addLine("Music", 'margin', 'blue');
-		addLine("System", 'margin', 'blue');		
+		addLine("System", 'margin', 'blue');
+		addLine("test.txt", 'margin', 'blue');		
 	},
 	ps: function() {
 		addLine("Running processes:");
