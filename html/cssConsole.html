@@ -146,7 +146,7 @@ var commands = {
 	"git help add": function (){
 		addLine("Command description:");
 		addLine("$ git add [file]", 'margin');
-		addLine("Snapshots the file in preparation for versioning.");
+		addLine("The git add command adds a change in the working directory to the staging area. And makes the file(s) ready for versoning.");
 	},
 
 	"git help commit": function (){
@@ -171,7 +171,7 @@ var commands = {
 		addLine("Initialized empty Git repository in /home/root/.git/");
 		addLine("<br> ", 'margin');
 		addLine("Step 2: Create a file and append some text to it.");
-		addLine("Type: echo 'This is one line' >> test.txt'");
+		addLine('Type: echo "This is one line" >> test.txt');
 	},
 
 	"git status": function (){
@@ -184,12 +184,17 @@ var commands = {
 		addLine(' (use "git add <file>..." to include in what will be committed) ');
 	},
 
-		"echo 'This is one line' >> test.txt": function (){
+		'echo "This is one line" >> test.txt': function (){
 		addLine("You now added one line to the file test.txt");
 	},
 
-		"echo 'This is another line' >> test.txt": function (){
+		'echo "This is another line" >> test.txt': function (){
 		addLine("You now added another line to the file test.txt");
+	},
+
+			'git add test.txt': function (){
+		addLine("test");
+		window.location.href = "http://google.com";
 	},
 		"cat test.txt": function (){
 		addLine("This is one line");
