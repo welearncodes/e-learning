@@ -71,7 +71,8 @@ margin-bottom:2px;
 
 	<div class="containerConsole">
 		<div class="console">
-			<div class="line white">Welcome to Git Learning Consol! Type 'git help' for command list.</div>
+			<div class="line white">Welcome to Git Learning Consol! Type 'git help' for command list.<br><br>
+			Step 1: Initiate an empty repository with 'git init'</div>
 		</div>
 		<div class="bottom">
 			<div class="label">></div>
@@ -169,8 +170,6 @@ var commands = {
 	"git init": function (){
 		addLine("Initialized empty Git repository in /home/root/.git/");
 		addLine("<br> ", 'margin');
-		alert("Success! You have initiated an empty git repository. Press OK to continue");
-		window.location.href = "http://localhost/e-learning/Steg/add.php";
 		addLine("Step 2: Create a file and append some text to it.");
 		addLine('Type: echo "This is one line" >> test.txt');
 	},
@@ -187,9 +186,6 @@ var commands = {
 
 		'echo "This is one line" >> test.txt': function (){
 		addLine("You now added one line to the file test.txt");
-		alert("Success! You now added one line to the file test.txt. Press OK to continue to next step")
-		window.location.href = "http://localhost/e-learning/Steg/add.php";
-
 	},
 
 		'echo "This is another line" >> test.txt': function (){
@@ -198,6 +194,7 @@ var commands = {
 
 			'git add test.txt': function (){
 		addLine("test");
+		window.location.href = "http://localhost/e-learning/Steg/add.php";
 	},
 		"cat test.txt": function (){
 		addLine("This is one line");
