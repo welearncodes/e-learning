@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<head>
-</head>
+<?php $title = "eLearning"; 
+
+include('../html/header.html'); 
+include('../html/scripts.html');
+?>
+
 <body>
-<?php $title = "eLearning"; include('../html/header.html'); 
-
- include('../html/scripts.html');
-
- include('../html/footer.html'); ?>
-
 <style>
 
 { margin: 0; padding: 0; }
