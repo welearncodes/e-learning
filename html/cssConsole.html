@@ -183,7 +183,7 @@ var commands = {
 		addLine(" <br>",'margin');
 		addLine("You will be redirected in 5 sec.", 'margin');
 		setTimeout(function(){
-		alert("Success! Press OK to continue to next step.");
+		alert("Perfect! Nice work! Press OK to continue to next step.");
 		window.location.href = "http://localhost/e-learning/Steg/commit.php";
 	},5000);
 		/*addLine(' (use git commit -m "Added new file" to commit and continue to next step) ');*/
@@ -211,8 +211,52 @@ var commands = {
 		addLine("create mode 100644 test.txt",'margin');
 		addLine("<br>You will redirected in 5 sec.",'margin');
 		setTimeout(function(){
-		alert("Success! You did your first commit! Now you need to push your changes to github. Press OK to do this in the next step.");
+		alert("Awesome!! You did your first commit! Now you need to push your changes to GitHub. Press OK to do this in the next step.");
 		window.location.href = "http://localhost/e-learning/Steg/push.php";
+	},5000);
+	},
+
+			'git push': function (){
+		addLine("Counting objects: 1, done.", 'margin');
+		addLine("Delta compression using up to 4 threads.", 'margin');
+		addLine("create mode 100644 test.txt",'margin');
+		addLine("Compressing objects: 100% (1/1), done.", 'margin');
+		addLine("Writing objects: 100% (1/1), 1.08 KiB | 0 bytes/s, done.",'margin');
+		addLine("To https://github.com/test/test",'margin');
+		addLine("b66f740..1089dff  master -> master",'margin');
+		addLine("<br>You will redirected in 5 sec.",'margin');
+		setTimeout(function(){
+		alert("Success! You pushed your changes to GitHub! Nice work! Press OK to continue to the next step.");
+		window.location.href = "http://localhost/e-learning/Steg/pull.php";
+	},5000);
+	},
+
+		'git pull': function (){
+		addLine("remote: Counting objects: 2, done.", 'margin');
+		addLine("remote: Total 12 (delta 10), reused 2 (delta 1), pack-reused 1", 'margin');
+		addLine("Unpacking objects: 100% (2/2), done.",'margin');
+		addLine("From https://github.com/welearncodes/e-learning", 'margin');
+		addLine("Writing objects: 100% (1/1), 1.08 KiB | 0 bytes/s, done.",'margin');
+		addLine("2b163de..665f04b  master     -> origin/master",'margin');;
+		addLine("<br>You will redirected in 5 sec.",'margin');
+		setTimeout(function(){
+		alert("Perfecto! You just pulled your teams last changes from GitHub! Nice work! Press OK to continue to the next step and learn to clone a Git repository.");
+		window.location.href = "http://localhost/e-learning/Steg/clone.php";
+	},5000);
+	},
+
+			'git clone': function (){
+		addLine("Cloning into test...", 'margin');
+		addLine("remote: Total 12 (delta 10), reused 2 (delta 1), pack-reused 1", 'margin');
+		addLine("remote: Counting objects: 526, done.",'margin');
+		addLine("remote: Total 526 (delta 36), reused 36 (delta 36), pack-reused 488", 'margin');
+		addLine("Receiving objects: 100% (526/526), 1.46 MiB | 585.00 KiB/s, done.",'margin');
+		addLine("Resolving deltas: 100% (311/311), done.",'margin');
+		addLine("Checking connectivity... done., done.",'margin');
+		addLine("<br>You will redirected in 5 sec.",'margin');
+		setTimeout(function(){
+		alert("Perfecto! You just pulled your teams last changes from GitHub! Nice work! Press OK to continue to the next step and learn to clone a Git repository.");
+		window.location.href = "http://localhost/e-learning/Steg/ferdig.php";
 	},5000);
 	},
 
