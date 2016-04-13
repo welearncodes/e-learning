@@ -69,10 +69,9 @@ margin-bottom:2px;
 
 </style>
 
-	<div class="containerConsole">
+	<div class="containerConsole" style="margin-left: auto; margin-right: auto">
 		<div class="console">
-			<div class="line white">Welcome to Git Learning Consol! Type 'git help' for command list.<br><br>
-			Step 1: Initiate an empty repository with 'git init'</div>
+			<div class="line white">Welcome to Git Learning Consol! Type 'git help' for command list.</div>
 		</div>
 		<div class="bottom">
 			<div class="label">></div>
@@ -176,16 +175,20 @@ var commands = {
 
 	"git status": function (){
 		addLine("On branch master");
+		addLine("<br>", 'margin');
 		addLine("Initial commit", 'margin');
-		addLine(" ", 'margin');
-		addLine("Untracked files:");
-		addLine("./html",'margin');
-		addLine("./html/index.html",'margin');
+		addLine("<br>", 'margin');
+		addLine("Changes to be committed:");
+		addLine("<span style='color:green'>new file:   test.txt</span>",'margin');
+		addLine(" <br>",'margin');
 		addLine(' (use "git add <file>..." to include in what will be committed) ');
 	},
 
 		'echo "This is one line" >> test.txt': function (){
 		addLine("You now added one line to the file test.txt");
+		alert("Success! You now added one line to the file test.txt. Press OK to continue to next step.")
+		window.location.href = "http://localhost/e-learning/Steg/status.php";
+
 	},
 
 		'echo "This is another line" >> test.txt': function (){
@@ -193,7 +196,7 @@ var commands = {
 	},
 
 			'git add test.txt': function (){
-		addLine("test");
+		alert("Success! You now added the file test.txt to the staging area. Press OK to continue to next step.")
 		window.location.href = "http://localhost/e-learning/Steg/add.php";
 	},
 		"cat test.txt": function (){
