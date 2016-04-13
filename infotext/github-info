@@ -1,1 +1,7 @@
-GitHub er et samfunn bygget av utviklere. Via GitHub kan utviklere laste opp code i from av repos som deretter andre kan bidra til eller kopiere, dette er bare en liten del av hva som er mulig via GitHub. Med Git så kan man håndterGitHub er et samfunn bygget av utviklere. Via GitHub kan utviklere laste opp code i from av repos som deretter andre kan bidra til eller kopiere, dette er bare en liten del av hva som er mulig via GitHub. Med Git så kan man håndteree
+Git is a community built on Git, an open source project started by Linux creator Linus Torvalds. a trainer at GitHub, explains that Git, like other version control systems, manages and stores revisions of projects.
+
+It is mostly used for code, but it coudl be used to manage any other type of file. It can be compared to a filing system for every draft of a document.
+
+Github is a Git repository hosting service, but it has many other features. Git is originally a command line tool, Github also provides a Web-based graphical interface alongside alot of other handy fetures.
+
+Perhaps most importantly, GitHub has become the biggest library for code examples. Since Git encourages granular recording of changes, programmers, be they absolute beginners or experts, can trace the steps of some of the greatest developers in the world and find out how they solved their problems.

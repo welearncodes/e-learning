@@ -4,11 +4,7 @@
 
 <?php include('html/main.html'); ?>
 
-<<<<<<< HEAD
-<!--php include('term/console.html'); ?-->
-=======
 <?php include('html/cssConsole.html'); ?>
->>>>>>> terminal
 
 <?php include('html/scripts.html'); ?>
 
