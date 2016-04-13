@@ -179,15 +179,20 @@ var commands = {
 		addLine("Initial commit", 'margin');
 		addLine("<br>", 'margin');
 		addLine("Changes to be committed:");
-		addLine("<span style='color:green'>new file:   test.txt</span>",'margin');
+		addLine("<span style='color:green'>new file: test.txt</span>",'margin');
 		addLine(" <br>",'margin');
-		addLine(' (use "git add <file>..." to include in what will be committed) ');
+		addLine("You will be redirected in 5 sec.", 'margin');
+		setTimeout(function(){
+		alert("Success! Press OK to continue to next step.");
+		window.location.href = "http://localhost/e-learning/Steg/commit.php";
+	},5000);
+		/*addLine(' (use git commit -m "Added new file" to commit and continue to next step) ');*/
 	},
 
 		'echo "This is one line" >> test.txt': function (){
 		addLine("You now added one line to the file test.txt");
 		alert("Success! You now added one line to the file test.txt. Press OK to continue to next step.")
-		window.location.href = "http://localhost/e-learning/Steg/status.php";
+		window.location.href = "http://localhost/e-learning/Steg/add.php";
 
 	},
 
@@ -197,8 +202,20 @@ var commands = {
 
 			'git add test.txt': function (){
 		alert("Success! You now added the file test.txt to the staging area. Press OK to continue to next step.")
-		window.location.href = "http://localhost/e-learning/Steg/add.php";
+		window.location.href = "http://localhost/e-learning/Steg/status.php";
 	},
+
+		'git commit -m "Added new file"': function (){
+		addLine("[master (root-commit) ff061d7] Added new file");
+		addLine("1 file changed, 1 insertion(+)", 'margin');
+		addLine("create mode 100644 test.txt",'margin');
+		addLine("<br>You will redirected in 5 sec.",'margin');
+		setTimeout(function(){
+		alert("Success! You did your first commit! Now you need to push your changes to github. Press OK to do this in the next step.");
+		window.location.href = "http://localhost/e-learning/Steg/push.php";
+	},5000);
+	},
+
 		"cat test.txt": function (){
 		addLine("This is one line");
 		addLine("This is another line");
