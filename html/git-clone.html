@@ -1,0 +1,44 @@
+body>
+	<header class=navbar-default>
+	<div class="container-fluid">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="#">Git E-learning</a>
+	  </div>
+
+	  	<!-- Collect the nav links, forms, and other content for toggling -->
+	  	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav navbar-nav">
+		      <ul class="nav navbar-nav">
+		      <li><a style="pointer-events: none; cursor: default;" href="page.html">init</a>
+		      <li><a style="pointer-events: none; cursor: default;" href="page.html">add</a>
+		      <li><a style="pointer-events: none; cursor: default;" href="page.html">status</a>
+		      <li><a style="pointer-events: none; cursor: default;" href="page.html">commit</a>
+		      <li><a style="pointer-events: none; cursor: default;" href="page.html">push</a>
+		      <li><a style="pointer-events: none; cursor: default;" href="page.html">pull</a>
+		      <li class="active" style="pointer-events: none; cursor: default;"><a href="#">clone<span class="sr-only">(current)</span></a></li>
+	 	</div><!-- /.navbar-collapse -->
+	</header>  
+</body>
+
+<div class=container>
+	<?php include('../html/cssConsole.html'); ?>
+	<div class="row">
+		<h1>Git Clone</h1>
+		<hr>
+
+		<p>Now that you have made your own repository and have acuired mad skills, you might want to copy someone elses repository</p>
+		<p>You can do this by going to the location on your computer where you want to add the files. Then you go to <a href="https://github.com>">https://github.com</a> and find a project you wish to clone and copy that projects link.</p>
+		<p>If you want to copy this website you would write:</p>
+
+		<pre>git clone https://github.com/welearncodes/e-learning.git</pre>
+		
+		<p>This will copy the files to the location you picked out.</p>
+	</div>
+</div>
