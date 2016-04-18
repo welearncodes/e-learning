@@ -1,4 +1,4 @@
-.videowrapper { 
+/*.videowrapper { 
         float: none;
         clear: both;
         width: 1080px;
@@ -8,4 +8,56 @@
         height: 0;
         margin: 0 auto;
         max-width: 100%;
-    }
+    }*/
+
+.videowrapper {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.knapper {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.knapper .btn{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#bilderMain {
+    text-align: center; 
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color: #f5f5f5;
+}
+
+
+
+.container {
+  margin-bottom: 4em;
+}
+
+

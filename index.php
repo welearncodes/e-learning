@@ -1,4 +1,4 @@
-<?php $title = "eLearning"; include('html/header.html'); ?> 
+<?php $title = "eLearning"; include('html/header.php'); ?> 
 
 <!--?php include('html/menu.html'); ?--> 
 
