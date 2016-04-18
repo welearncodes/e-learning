@@ -72,8 +72,16 @@
           <li class="
 
           <?php if(basename($_SERVER['SCRIPT_NAME']) == 'cline.php'){echo 'active'; }else { echo ''; } ?>"><a style="pointer-events: none; cursor: default;" href="#">clone</a> </li>
+
           </ul>
+ <div id="google_translate_element" class="pull-right" style="padding-top: 1em;"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'no', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+         
        </div>
+
        </div>
 </header>
        <!-- /.navbar-collapse -->
