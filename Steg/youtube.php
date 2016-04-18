@@ -8,7 +8,7 @@
   <iframe width="600" height="300" src="https://www.youtube.com/embed/DR7MLaAKcUk?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
-  <div class="row knapper">
+  <div class="row knapper" id="dyttKnapp">
       <a href="Steg/init.php" type="button" class="btn btn-success btn-block">Fortsett</a>
   </div>
 </div>
